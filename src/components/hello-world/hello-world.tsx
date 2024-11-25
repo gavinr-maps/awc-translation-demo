@@ -5,11 +5,11 @@ import { useT9n } from "../../controllers/useT9n";
 declare global {
   interface DeclareElements {
     // Declare a custom element with a given tag name
-    "arcgis-hello-world": ArcgisHelloWorld;
+    "hello-world": HelloWorld;
   }
 }
 
-export class ArcgisHelloWorld extends LitElement {
+export class HelloWorld extends LitElement {
   //#region Public Properties
 
   @property() name = "World";
