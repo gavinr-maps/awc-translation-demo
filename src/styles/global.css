@@ -1,0 +1,13 @@
+/*
+ * Styles that you wish to applied to the entire page, even outside the shadow
+ * dom. Useful for declaring CSS variables.
+ */
+:root {
+  /*
+   * This variable will be available to every component on the page, even in
+   * shadow roots. You can instruct the users of your library about what global
+   * CSS variables are available, letting them customize things like brand
+   * colors or fonts.
+   */
+  --acme-components-text-color: #111;
+}

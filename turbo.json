@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      // Make turbo cache dist/* output for the build task
+      "outputs": ["dist/**", "../lumina-components-react/src/components.ts"]
+    },
+    "build:dev": {
+      "outputs": ["dist/**", "../lumina-components-react/src/components.ts"]
+    },
+    "disabled-sb:build:external-storybook": {
+      // Make turbo run the build task before storybook build
+      "dependsOn": ["build"]
+    },
+    "disabled-sb:start:external-storybook": {
+      "dependsOn": ["build:dev"]
+    },
+    "build:internal-storybook": {
+      "dependsOn": ["build"]
+    },
+    "start:internal-storybook": {
+      "dependsOn": ["build:dev"]
+    }
+  }
+}

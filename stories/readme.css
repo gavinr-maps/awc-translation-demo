@@ -1,0 +1,7 @@
+/* sb-unstyled still a recommended className when used outside Canvas component */
+arcgis-map,
+arcgis-scene {
+  display: inline-block;
+  height: 600px;
+  width: 100%;
+}

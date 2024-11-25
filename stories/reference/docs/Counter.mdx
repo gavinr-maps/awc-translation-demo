@@ -1,0 +1,18 @@
+import { Meta, Title, Canvas, Controls, Story } from "@storybook/blocks";
+
+import { TemplateComponentDoc } from "@arcgis/storybook-utils";
+
+import * as ComponentStory from "../stories/Counter.stories";
+
+import "../../readme.css";
+
+<Meta title="Component Reference/Counter" of={ComponentStory} />
+
+<Title>Counter</Title>
+
+<TemplateComponentDoc src="docs/docs.json" component="arcgis-counter">
+  <Canvas>
+    <Story of={ComponentStory.Counter} />
+  </Canvas>
+  <Controls of={ComponentStory.Counter} />
+</TemplateComponentDoc>

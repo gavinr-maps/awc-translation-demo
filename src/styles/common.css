@@ -1,0 +1,7 @@
+/**
+ * Common styles are the styles that you wish to make available in each
+ * component's shadow root, but to not apply outside the shadow root.
+ */
+:host {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
